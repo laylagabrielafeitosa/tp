@@ -1,0 +1,8 @@
+vprograma
+{
+	
+	funcao inicio()
+	{
+		escreva("Aula de Programaçao")
+	}
+}
