@@ -1,4 +1,4 @@
- programa {
+programa {
    funcao inicio(){
 
   	real Mmatematica [3][5],Mportugues[3][5],Mhistoria[3][5],Mingles[3][5],
@@ -12,26 +12,26 @@ Mfisica[3][5]
  	Mindice = 0
 
  	
- 	para (Mturma = 0;Mturma <= 2;Mturma ++)
+ 	para (Mturma = 0;Mturma <= 1;Mturma ++)
  	{
- 	  para (Mindice = 0;Mindice < 2;Mindice ++)
+ 	  para (Mindice = 0;Mindice < 1;Mindice ++)
  	  {
  	  escreva("Digite um nome:")
  	  leia(Mnome[Mturma][Mindice])
 
- 	  escreva("Digite a nota de matematica:")
+ 	  escreva("Digite uma nota de matematica:")
  	  leia(Mmatematica[Mturma][Mindice])
 
- 	  escreva("Digite a nota de portugues:")
+ 	  escreva("Digite uma nota de portugues:")
  	  leia(Mportugues[Mturma][Mindice])
 
- 	  escreva("Digite a nota de historia:")
+ 	  escreva("Digite uma nota de historia:")
  	  leia(Mhistoria[Mturma][Mindice])
 
- 	  escreva("Digite a nota de ingles:")
+ 	  escreva("Digite uma nota de ingles:")
  	  leia(Mingles[Mturma][Mindice])
 
- 	  escreva("Digite a nota de fisica:")
+ 	  escreva("Digite uma nota de fisica:")
  	  leia(Mfisica[Mturma][Mindice])
        }
 
@@ -52,7 +52,62 @@ Mfisica[3][5]
            {
             escreva ("\nAluno:",Mnome[Mturma][Mindice])
 
-
+para (Mturma = 0; Mturma <= 1; Mturma ++)
+            {
+                escreva ("\nTurma: ", Mturma)
+                para (Mindice = 0; Mindice < 1; Mindice ++)
+                {
+                escreva ("\nAluno: ", Mnome[Mturma][Mindice])
+               
+               
+               
+                    se (Mmatematica[Mturma][Mindice] < 60)
+                    {
+                        escreva ("\nReprovado em Matemática")
+                    }
+                    senao
+                    {
+                        escreva ("\nAprovado em Matemática")
+                    }
+               
+               
+                se (Mportugues[Mturma][Mindice] < 60)
+                    {
+                        escreva ("\nAprovado em Portugues")
+                    }
+                    senao
+                    {
+                        escreva ("\nAprovado em Portugues")
+                    }
+               
+                se (Mhistoria[Mturma][Mindice] < 60)
+                    {
+                        escreva ("\nReprovado em História")
+                    }
+                    senao
+                    {
+                        escreva ("\nAprovado em História")
+                    }
+               
+                se (Mingles[Mturma][Mindice] < 60)
+                    {
+                        escreva ("\nAprovado em Inglês")
+                    }
+                    senao
+                    {
+                        escreva ("\nAprovado em Inglês")
+                    }
+                   
+                se (Mfisica[Mturma][Mindice] < 60)
+                    {
+                        escreva ( "\nReprovado em Física")
+                    }
+                    senao
+                    {
+                        escreva ("\nAprovado em Física")
+                    }
+                   
+            }
 
 
             
@@ -61,5 +116,5 @@ Mfisica[3][5]
 
 
    }
- }
- 
+}
+}
