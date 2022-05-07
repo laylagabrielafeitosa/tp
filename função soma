@@ -1,0 +1,38 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+              real Mnumero1, Mnumero2, Mnumero3, Mnumero4
+
+              escreva("Digite o primeiro numero: ")
+              leia(Mnumero1)
+              escreva("Digite o segundo numero: ")
+              leia(Mnumero2)
+
+         escreva("\nO resultado do primeiro calculo e: ", calcula (Mnumero1, Mnumero2,)
+    // chama a funcao no escreva
+
+        escreva("Digite o terceiro numero: ")
+            leia(Mnumero3)
+            escreva("Digite o quarto numero: ")
+            leia(Mnumero4)
+
+        escreva("\nO resultado do segundo calculo e: ", calcula (Mnumero3, Mnumero4), "\n") //
+chama a funcao no escreva
+
+	}
+
+	// Funcao que realiza um calculo e retorna o resultado
+	funcao real calcula (real a, real b)
+     {
+
+     	real resultado
+
+     	resultado = a + b
+
+     	retorne resultado
+
+	}
+}
