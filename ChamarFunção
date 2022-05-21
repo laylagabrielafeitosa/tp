@@ -1,0 +1,72 @@
+programa{
+	funcao inicio() {
+
+        real Mnumero1,Mnumero2,Msoma, Msubtracao, Mmultiplicacao, Mdivisao
+
+        Mnumero1 = 0.0
+        Mnumero2 = 0.0
+        Msoma = 0.0
+        Msubtracao = 0.0
+        Mmultiplicacao = 0.0
+        Mdivisao = 0.0
+        
+	   escreva ("Insira o primeiro numero: ")
+	   leia (Mnumero1)
+
+	   escreva ("Insira o segundo numero: ")
+	   leia (Mnumero2)
+
+	   Msoma = Mnumero1 + Mnumero2
+	   Msubtracao = Mnumero1 - Mnumero2
+	   Mmultiplicacao = Mnumero1 * Mnumero2
+	   Mdivisao = Mnumero1 / Mnumero2
+
+	   escreva ("\nA soma dos numeros e: ", soma(Mnumero1, Mnumero2))
+	   escreva ("\nA subtracao dos numeros e: ", subtracao(Mnumero1, Mnumero2))
+	   escreva ("\nA multiplicacao dos numeros e: ", multiplicacao(Mnumero1, Mnumero2))
+	   escreva ("\nA divisao dos numeros e: ", divisao(Mnumero1, Mnumero2))
+
+
+
+
+
+
+	}
+
+	funcao real soma (real a, real b)
+	       {
+	       	      real resultado
+	       	      resultado = a + b
+	       	      retorne resultado
+	       }
+
+     funcao real subtracao (real a, real b)
+            {
+            	           real resultado
+            	           resultado = a - b
+            	           retorne resultado
+            }
+
+     funcao real multiplicacao (real a, real b)
+            {
+            	               real resultado
+            	               resultado = a * b
+            	               retorne resultado
+            }
+
+     funcao real divisao (real a, real b)
+            {
+            	          real resultado
+            	          resultado = a / b
+            	          retorne resultado
+            }
+
+
+
+
+
+
+
+
+	
+}
